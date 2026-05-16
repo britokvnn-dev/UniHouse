@@ -70,4 +70,12 @@ class User extends Authenticatable
     {
         return $this->role === 'estudante';
     }
+
+    /**
+     * Verifica se o usuário é administrador.
+     */
+    public function isAdmin(): bool
+    {
+        return $this->role === 'admin';
+    }
 }

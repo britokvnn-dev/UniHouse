@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('password');
 
             // Papel do usuário na plataforma
-            $table->enum('role', ['estudante', 'locador'])->default('estudante');
+            $table->enum('role', ['estudante', 'locador', 'admin'])->default('estudante');
 
             // Telefone de contato (opcional)
             $table->string('phone', 20)->nullable();
