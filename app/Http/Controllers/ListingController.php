@@ -80,7 +80,7 @@ class ListingController extends Controller
             'neighborhood' => $data['neighborhood'],
             'city' => $data['city'],
             'state' => $data['state'],
-            'zipcode' => $data['zipcode'],
+            'zip_code' => $data['zipcode'],
         ]);
 
         return redirect()->route('listings.show', $listing)->with('success', 'Anúncio criado com sucesso! Ele será avaliado por um administrador antes de ser publicado.');

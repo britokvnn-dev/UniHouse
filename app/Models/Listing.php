@@ -27,6 +27,7 @@ class Listing extends Model
         'bathrooms',
         'furnished',
         'pets_allowed',
+        'zip_code',
         'internet_included',
     ];
 
